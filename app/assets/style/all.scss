@@ -9,6 +9,10 @@
 @import "./base/reset";
 //components
 @import './components/icon';
+@import './components/card';
+//vendors
+@import './vendors/swiper';
+
 //layout
 @import "./layout/header";
 @import "./layout/index";

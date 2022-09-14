@@ -13,3 +13,14 @@ a {
     opacity: 0.8;
   }
 }
+.font-Azeret{
+  font-family: 'Azeret Mono', monospace;
+}
+.scroll{
+  overflow-x: auto;
+  white-space: nowrap;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  &::-webkit-scrollbar {
+      width: 0px;
+    }
+}

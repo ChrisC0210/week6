@@ -16,6 +16,18 @@
     background-color: #fff;
   }
 }
+//@at-root
+.share-bg{
+  background-image: url('../images/bg_share.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 733px;
+  @media (max-width:991px) {
+    height: auto;
+  }
+}
 .text-line{
   &::after{
     content: " ";
@@ -23,7 +35,76 @@
     width: 50px;
     background-color: $primary;
     position: absolute;
-    bottom: 0;
+    bottom: -44px;
     left: 0;
+  }
+}
+.text-line-center{
+  height: 3px;
+  width: 50px;
+  background-color: $primary;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.text-line-start{
+  height: 3px;
+  width: 50px;
+  background-color: $primary;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+//
+//card-info
+.card-info{
+  .card{
+    border: 0px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0rem;
+    // background-color: $gray-1c;
+    // opacity: 0.9;
+    &:hover,&:focus,&:active {
+      background-image: linear-gradient(#ffffff00);
+      .text-line-start{
+        background-color: $primary;
+      }
+    }
+  }
+  .text-line-start{
+    background-color: $white;
+  }
+  &-bg1{
+    background-image: linear-gradient(#1c1c1ce6), url('../images/info01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 615px;
+  }
+  &-bg2{
+    background-image: linear-gradient(#1c1c1ce6), url('../images/info02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 615px;
+  }
+  &-bg3{
+    background-image: linear-gradient(#1c1c1ce6), url('../images/info03.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 615px;
+  }
+  &-bg4{
+    background-image: linear-gradient(#1c1c1ce6), url('../images/info04.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 615px;
   }
 }
