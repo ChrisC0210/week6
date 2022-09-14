@@ -1,0 +1,15 @@
+.nav-tab{
+  .nav-pills .nav-link{
+    border : solid 1px $white;
+  }
+  .nav-pills .nav-link.active{
+    border : solid 1px $primary;
+  }
+  @media (max-width: 768px){
+    .nav-pills{
+      width: 100% !important;
+      -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+    }
+  }
+}

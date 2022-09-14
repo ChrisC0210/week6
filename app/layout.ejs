@@ -15,45 +15,9 @@
 </head>
 
 <body>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-gray-bg bg-gray-bg pt-4 pb-4 line-button">
-    <div class="container-fluid container">
-      <!-- <h1 class="m-0 d-flex lh-base"> -->
-        <a class="navbar-brand logo" href="#">
-          <h1 class="m-0 lh-base fs-6 d-flex align-items-end">
-            <img class="logo-img me-3" src="./assets/images/logo2.svg" alt="logo">
-            <span class="logo-text fs-6 text-gray-c1">Coding Home |</span>
-          </h1>
-        </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0 lh-base">
-            <li class="nav-item me-6">
-              <a class="nav-link active text-white fs-7" aria-current="page" href="#">首頁</a>
-            </li>
-            <li class="nav-item me-6">
-              <a class="nav-link text-white fs-7" href="#">課程介紹</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fs-7 d-flex align-items-center" href="#">
-                <!-- <span class="material-icons">account_circle</span> -->
-                <span class="material-symbols-outlined">
-                  account_circle
-                </span>
-                登入</a>
-            </li>
-          </ul>
-        </div>
-    </div>
-  </nav>
-
+  <%- include('partial/header') %>
   <%- contents %>
-
-  <footer class="text-center pt-4 pb-4 bg-gray-1a text-white">
-    Coding Home © 2022 All Rights Reserved
-  </footer>
+  <%- include('partial/footer') %>
 
   <script src="./assets/js/vendors.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

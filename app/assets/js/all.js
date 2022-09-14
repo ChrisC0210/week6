@@ -1,5 +1,4 @@
 $(function () {
-  console.log('Hello Bootstrap5');
   // Swiper
   const swiper = new Swiper('.swiper', {
     // Optional parameters

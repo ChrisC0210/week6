@@ -76,6 +76,7 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 $gray-bg:       #2d2d2d !default;
+$gray-bgnull:       #2d2d2d00 !default;
 $gray-20:       #202020 !default;
 $gray-1c:       #1C1C1C !default;
 $gray-1a:       #1A1A1A !default;
@@ -944,22 +945,31 @@ $nav-link-padding-y:                .5rem !default;
 $nav-link-padding-x:                1rem !default;
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
-$nav-link-color:                    $link-color !default;
-$nav-link-hover-color:              $link-hover-color !default;
+//$nav-link-color:                    $link-color !default;
+$nav-link-color:                    $white !default;
+//$nav-link-hover-color:              $link-hover-color !default;
+$nav-link-hover-color:              $primary !default;
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
 $nav-link-disabled-color:           $gray-600 !default;
 
-$nav-tabs-border-color:             $gray-300 !default;
+//$nav-tabs-border-color:             $gray-300 !default;
+$nav-tabs-border-color:             $white !default;
+$nav-tabs-border-color-2:             $primary !default;
 $nav-tabs-border-width:             $border-width !default;
 $nav-tabs-border-radius:            $border-radius !default;
-$nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color !default;
-$nav-tabs-link-active-color:        $gray-700 !default;
+//$nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color !default;
+$nav-tabs-link-hover-border-color:  $primary $primary $nav-tabs-border-color-2!default;
+//$nav-tabs-link-active-color:        $gray-700 !default;
+$nav-tabs-link-active-color:        $primary $primary $nav-tabs-border-color-2  !default;
 $nav-tabs-link-active-bg:           $body-bg !default;
-$nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
+//$nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
+$nav-tabs-link-active-border-color: $primary $primary $nav-tabs-border-color-2  !default;
 
 $nav-pills-border-radius:           $border-radius !default;
-$nav-pills-link-active-color:       $component-active-color !default;
-$nav-pills-link-active-bg:          $component-active-bg !default;
+//$nav-pills-link-active-color:       $component-active-color !default;
+$nav-pills-link-active-color:       $primary !default;
+//$nav-pills-link-active-bg:          $component-active-bg !default;
+$nav-pills-link-active-bg:         $gray-bgnull !default;
 // scss-docs-end nav-variables
 
 
@@ -995,11 +1005,14 @@ $navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://w
 $navbar-dark-toggler-border-color:  rgba($white, .1) !default;
 
 $navbar-light-color:                rgba($black, .55) !default;
-$navbar-light-hover-color:          rgba($black, .7) !default;
-$navbar-light-active-color:         rgba($black, .9) !default;
+//$navbar-light-hover-color:          rgba($black, .7) !default;
+$navbar-light-hover-color:          rgba($primary, .7) !default;
+//$navbar-light-active-color:         rgba($black, .9) !default;
+$navbar-light-active-color:         rgba($primary, .9) !default;
 $navbar-light-disabled-color:       rgba($black, .3) !default;
 $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
-$navbar-light-toggler-border-color: rgba($black, .1) !default;
+//$navbar-light-toggler-border-color: rgba($black, .1) !default;
+$navbar-light-toggler-border-color: rgba($primary, .1) !default;
 
 $navbar-light-brand-color:                $navbar-light-active-color !default;
 $navbar-light-brand-hover-color:          $navbar-light-active-color !default;
