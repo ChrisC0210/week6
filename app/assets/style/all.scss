@@ -1,0 +1,19 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+@import "./helpers/mixins";
+@import "./helpers/utilities";
+
+//base
+@import "./base/reset";
+//components
+@import './components/icon';
+@import './components/card';
+@import './components/tabs';
+//vendors
+@import './vendors/swiper';
+
+//layout
+@import "./layout/header";
+@import "./layout/index";

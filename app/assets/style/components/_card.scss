@@ -1,0 +1,118 @@
+.user-card {
+  &-img {
+    width: 40px;
+    height: 40px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-text {
+    h5 {
+      color: $gray-900;
+    }
+    p {
+      color: $gray-600;
+    }
+  }
+}
+.list-card {
+  &-img {
+    width: 40px;
+    height: 40px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-text {
+    h4,
+    h5 {
+      color: $gray-900;
+    }
+    p {
+      color: $gray-600;
+    }
+  }
+}
+//modal-card
+.modal-card {
+  &-img {
+    min-width: 141px;
+    min-height: 141px;
+    object-fit: cover;
+  }
+}
+//
+.card-border-primary {
+  border: solid 1px;
+  border-radius: 12px;
+  border-color: $dark;
+  cursor: pointer;
+  &:hover,&:focus,&:active {
+    background-color: $gray-20;
+    border-color: $primary;
+    .material-symbols-outlined {
+      @include gradient-y;
+      background-clip: text;
+      color: transparent;
+    }
+  }
+  .material-symbols-outlined {
+    font-size: 50px;
+  }
+}
+.card-hot {
+  &-img {
+    width: 100px;
+    height: 100px;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    //background-color: $gray-20;
+    border-color: $primary;
+    opacity: 1;
+  }
+}
+//
+.squareRounded {
+  display: none;
+  width: 32px;
+  height: 32px;
+  &-topLeft {
+    border-top: 2px solid $primary;
+    border-left: 2px solid $primary;
+    border-top-left-radius: 10px;
+  }
+  &-topRight {
+    border-top: 2px solid $primary;
+    border-right: 2px solid $primary;
+    border-top-right-radius: 10px;
+  }
+  &-bottomLeft {
+    border-bottom: 2px solid $primary;
+    border-left: 2px solid $primary;
+    border-bottom-left-radius: 10px;
+  }
+  &-bottomRight {
+    border-bottom: 2px solid $primary;
+    border-right: 2px solid $primary;
+    border-bottom-right-radius: 10px;
+  }
+}
+.card-share {
+  &:hover {
+    .squareRounded {
+      display: block;
+    }
+  }
+}
+//class
+.card-class{
+  &-img {
+    width: 100px;
+  }
+}
